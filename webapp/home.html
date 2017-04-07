@@ -1,0 +1,149 @@
+<html >
+	<head>
+		<title> </title>
+		<meta />
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="Chart.bundle.js"></script>
+		<script src="utils.js"></script>
+		<script src="webapp.js"></script>
+		<script src="../utils.js"></script>
+		<script src="../webapp.js"></script>
+	
+		
+		
+	</head>
+	<body > 
+		
+		
+			<div id="menu">
+				<ul>
+					<li><a href="https://www.google.com.vn/?gfe_rd=cr&ei=u-lqWPPlK4SAvATYq5LYBQ"> HOME </a></li>
+					<li><a href="http://fet.uet.vnu.edu.vn/"> FET </a></li>
+					<li><a href="contact.html"> CONTACT</a></li>
+					<li><a href="https://github.com/">SOURCE </a></li>
+					
+				</ul>
+			</div><!--end.home-->
+			<div id="content">
+					<div id="header" >
+						<div id="logo">
+							
+							<img src="logo_FET_Small_Background.jpg" height="80px" width="300px"  alt=" Robot" >
+						</div>
+						<div class="slogan">	
+							<p><p> <font size="5" <strong> ROBOTICSLAB </strong></font></p></p>
+						</div>
+					</div><!-- end.header -->
+				
+					<div class="row" id="intro">
+					
+						<div id="sensor" class="col">
+								<div class="title"><i class="fa fa-cloud"    style="font-size:24px ; color:red;"></i><p> 
+								<font size="5" color="red" <strong>ROBOT </strong></font></p></div>
+							<div class="sonar">
+								
+								<!-- START SENSOR-->
+								<div class="box1">{{sonar[2]}}</div>
+								<div class="circle">
+									<button class="buttonupdate" ng-click="update()">
+									{{direct}}°
+									</div>
+								
+  
+								<div class="box2">{{sonar[0]}}</div>
+								<div class="box3">{{sonar[1]}}</div>
+								<div class="box4">{{sonar[3]}}</div>
+								<div class="box5">{{sonar[4]}}</div>
+								
+							</div>
+							
+							
+							<div class ="bordergrap" >
+									
+							</div>
+							<div class="temp" ng-controller="Home" >
+								<p name="temp" value="10" > TEMPERATURE :{{temp}}°C </p>
+							</div>
+							<div class="noti">
+								<img src="noti.jpg" height="80px" width="80px"  alt=" Robot" >
+							</div>	
+							<div class="noti_title">
+								<div class="titleesp">ESP8266:{{stt}}</div>
+								<div class="titlepir">   PIR :{{pir}}</div>
+								</div>
+								
+							
+						
+						</div><!--END.SENSOR-->
+						
+							
+					
+						<div id="control" class="col">
+						
+						<!-- START control-->
+							<div class="controlrobot">
+								<div class="title"><i class="fa fa-cloud"    style="font-size:24px ; color:blue;"></i><p> 
+								<font size="5" color="red" <strong>CONTROL ROBOT </strong></font></p></div>
+								<div id="runstt">
+									<font size="5" color="blue" <strong>MODE :{{runstt}}</strong></font></p>
+								</div>
+								<div class="title">
+									<button class="buttonc" ng-click="up()">
+									UP
+								</div>
+								<div class="title">
+									<button class="buttonc" ng-click="stop()">
+									STOP
+								</div>
+								<div class="title">
+									<button class="buttonc" ng-click="down()">
+									Down
+								</div>
+								<div class="title">
+									<button class="buttoncright" ng-click="right()">
+									RIGHT
+								</div>
+								<div class="title">
+									<button class="buttoncleft" ng-click="left()">
+									LEFT
+								</div>
+							</div>
+							<div class="option">
+								<div class="title">
+									<button class="start" ng-click="start()">
+									START
+									<button class="emergency" ng-click="emergency()">
+									FREEZE
+									
+								</div>
+							</div>
+							<div class="optionsos">
+								<div class="title">
+									<button class="sos1" ng-click="sos()">
+									SOS
+									<button class="sos1" ng-click="_reset()">
+									RESET
+								</div>
+							</div>
+							<div id="mode">
+								<button class="mode" ng-click="auto()">
+								AUTO
+								<button class="mode" ng-click="control()">
+								CONTROL
+							</div>
+							
+													
+							</div><!--END.control-->
+							
+						
+					</div>
+					<div id="footer">
+						<p> ROBOTICSLAB  &copy UET </p>
+					</div>
+			</div><!-- end.content -->
+		
+		</div>
+	</body>
+</html>

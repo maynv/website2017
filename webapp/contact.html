@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>MAY</title>
+  <script src="Chart.bundle.js"></script>
+    <script src="utils.js"></script>
+	<meta charset="utf-8">
+		<title>ROBOTICSLAB</title>
+		<!-- Only required for desktop -->
+		<link rel="stylesheet" href="/dist/css/mobile-angular-ui-hover.min.css" />
+		<!-- Always required -->
+		<link rel="stylesheet" href="/dist/css/mobile-angular-ui-base.min.css" />
+		<!-- Only required for desktop -->
+		<link rel="stylesheet" href="/dist/css/mobile-angular-ui-desktop.min.css" />
+		<script src="/angular.min.js"></script>
+		<script src="/angular-route.min.js"></script>
+		<script src="/dist/js/mobile-angular-ui.min.js"></script>
+		<script src="/dist/socket.io.min.js"></script>
+		<script src="/socket.min.js"></script>
+		<script src="/webapp.js"></script>
+		<script src="Chart.bundle.js"></script>
+		<script src="utils.js"></script>
+		
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		    <style>
+			canvas {
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+			}
+			</style>
+    
+</head>
+
+<body  ng-app="myApp" >
+
+    
+	<div ng-controller="Home"  style="width:25%;">
+		
+						
+		put  id="temp"  value="{{temp}}"> </input>
+		<input type="submit"></input>
+			
+        <canvas id="myChart" width="10px" height="10px"></canvas>
+		 
+		<script src="may.js">; </script>
+    </div>
+  
+    
+</body>
+</html>
